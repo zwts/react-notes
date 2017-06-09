@@ -1,0 +1,58 @@
+{
+  "scripts": {
+    "build:dev": "make build-dev",
+    "build:prod": "make build-prod",
+    "build": "webpack",
+    "lint:js": "eslint src",
+    "lint:css": "stylelint 'style/scss/**/*.scss'",
+    "lint": "npm run lint:js && npm run lint:css",
+    "dev": "make watch",
+    "test": "make test",
+    "clean": "rm -rf dist"
+  },
+  "precommit": [
+    "lint"
+  ],
+  "devDependencies": {
+    "babel-core": "6.4.5",
+    "babel-eslint": "7.2.1",
+    "babel-loader": "6.2.1",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-0": "6.24.1",
+    "css-loader": "0.23.1",
+    "eslint": "3.19.0",
+    "eslint-config-airbnb": "14.1.0",
+    "eslint-plugin-import": "2.2.0",
+    "eslint-plugin-jsx-a11y": "4.0.0",
+    "eslint-plugin-react": "6.10.3",
+    "extract-text-webpack-plugin": "1.0.1",
+    "fatigue-scripts": "git+ssh://git@git.kaiostech.com:shared/fatigue-scripts.git",
+    "file-loader": "0.8.5",
+    "node-sass": "3.7.0",
+    "pre-commit": "1.2.2",
+    "sass-loader": "3.2.0",
+    "style-loader": "0.13.1",
+    "stylelint": "7.10.1",
+    "stylelint-config-standard": "16.0.0",
+    "webpack": "1.13.0"
+  },
+  "dependencies": {
+    "base-component": "git+ssh://git@git.kaiostech.com:shared/base_component.git",
+    "base-emitter": "git+ssh://git@git.kaiostech.com:shared/base-emitter.git",
+    "base-module": "git+ssh://git@git.kaiostech.com:shared/base-module.git",
+    "react": "15.1.0",
+    "react-animation-composer": "git+ssh://git@git.kaiostech.com:shared/react-animation-composer.git",
+    "react-dialog": "git+ssh://git@git.kaiostech.com:shared/react-dialog.git",
+    "react-dom": "15.1.0",
+    "react-option-menu": "git+ssh://git@git.kaiostech.com:shared/react-option-menu.git",
+    "react-sim-chooser": "git+ssh://git@git.kaiostech.com:shared/react-sim-chooser.git",
+    "react-soft-key": "git+ssh://git@git.kaiostech.com:shared/react-soft-key.git",
+    "resolve-url-loader": "1.6.0",
+    "service": "git+ssh://git@git.kaiostech.com:shared/service.git",
+    "settings-manager": "git+ssh://git@git.kaiostech.com:shared/settings-manager.git",
+    "sim-settings-helper": "git+ssh://git@git.kaiostech.com:shared/sim-settings-helper.git",
+    "simple-navigation-helper": "git+ssh://git@git.kaiostech.com:shared/simple-navigation-helper.git",
+    "soft-key-store": "git+ssh://git@git.kaiostech.com:shared/soft-key-store.git"
+  }
+}

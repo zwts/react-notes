@@ -1,0 +1,22 @@
+{
+  "name": "Notes",
+  "orientation": "default",
+  "description": "Gaia notes application",
+  "type": "certified",
+  "launch_path": "index.html",
+  "default_locale": "en-US", 
+  "icons": {
+    "60": "/style/icons/note_56.png",
+    "90": "/style/icons/note_84.png"
+  },
+  "developer": {
+    "url": "https://github.com/mozilla-b2g/gaia", 
+    "name": "KaiOS"
+  },
+  "locales": {
+    "en-US": {
+      "name": "Notes",
+      "description": "Gaia notes"
+    }
+  }
+}

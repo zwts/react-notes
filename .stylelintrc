@@ -1,0 +1,23 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "at-rule-no-vendor-prefix": true,
+    "at-rule-empty-line-before": [
+      "always", {
+        "ignore": ["inside-block", "after-comment"]
+      }
+    ],
+    "rule-empty-line-before": [
+      "always", {
+        "except": ["first-nested"],
+        "ignore": ["after-comment", "inside-block"]
+      }
+    ],
+    "block-closing-brace-newline-after": [
+      "always",
+      {
+        "ignoreAtRules": ["if", "else"]
+      }
+    ]
+  }
+}
